@@ -1,4 +1,4 @@
-import BlogInfo from "../BlogInfo";
+import BlogInfo from "./BlogInfo";
 
 function Blog() {
 
