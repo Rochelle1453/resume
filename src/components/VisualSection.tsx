@@ -3,13 +3,13 @@ import ProfilePic from "./ProfilePic";
 
 function VisualSection(){
     return(
-        <div className="grid grid-cols-2 gap-4 m-[-80px] rounded-md px-5 bg-white w-full shadow-lg">
-            <div className="flex flex-cols gap-10 ">
+        <div className="w-full bg-white shadow-lg rounded-lg grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
+            <div className="flex flex-col sm:flex-row items-center gap-4">
                 <ProfilePic />
-                <div className="m-[10px]">
-                    <h1 className="text-2xl italic"><b>Rochelle Andales</b></h1>
-                    <p>BSIT 3B</p>
-                    <div className="flex flex-row gap-[20px] pt-[20px] mt-[10px]">
+                <div className="text-center sm:text-left">
+                    <h1 className="text-2xl font-bold italic"><b>Rochelle Andales</b></h1>
+                    <p className="text-gray-700">BSIT 3B</p>
+                    <div className="flex justify-center sm:justify-start gap-4 mt-4">
                         <a href="https://www.facebook.com/rochelle.andales.90/">
                         <img className="w-[20px]" src="../facebook.png" alt="facebook" />
                         </a>
@@ -22,28 +22,24 @@ function VisualSection(){
                     </div>
                 </div>
             </div>
-            <div className="grid grid-cols-2 gap-4 gap-x-[50px] ">
-                <div className="grid grid-rows-2 gap-y-[10px]">
-                    <div className="bg-gray-100 rounded-md mt-[10px] p-[8px] shadow-md">
-                        <h4>EMAIL</h4>
-                    <p className="italic">hoperochelleandales@gmail.com</p>
+            <div className="grid grid-cols-2 gap-4">
+                    <div className="bg-gray-100 rounded-md p-3 shadow-sm">
+                        <h4 className="font-semibold text-gray-700">EMAIL</h4>
+                    <p className="italic text-gray-600 text-sm break-words">hoperochelleandales@gmail.com</p>
                     </div>
-                    <div className="bg-gray-100 rounded-md mb-[10px] p-[8px] shadow-md">
-                        <h4>CONTACT</h4>
-                        <p className="italic">0975 322 1337</p>
+                    <div className="bg-gray-100 rounded-md p-3 shadow-sm">
+                        <h4 className="font-semibold text-gray-700">CONTACT</h4>
+                        <p className="italic text-gray-600 text-sm">0975 322 1337</p>
                     </div>
-                </div>
-                <div className="grid grid-rows-2 gap-y-[10px]">
-                    <div className="bg-gray-100 rounded-md mt-[10px] p-[8px] shadow-md">
-                        <h4>BIRTHDAY</h4>
-                    <p className="italic">September 12, 2004</p>
+                    <div className="bg-gray-100 rounded-md p-3 shadow-sm">
+                        <h4 className="font-semibold text-gray-700">BIRTHDAY</h4>
+                    <p className="italic text-gray-600 text-sm">September 12, 2004</p>
                     </div>
-                    <div className="bg-gray-100 rounded-md mb-[10px] p-[8px] shadow-md">
-                        <h4>LOCATION</h4>
-                        <p className="italic">Bang Bang, Cordova, Cebu.</p>
+                    <div className="bg-gray-100 rounded-md p-3 shadow-sm">
+                        <h4 className="font-semibold text-gray-700">LOCATION</h4>
+                        <p className="italic text-gray-600 text-sm">Bang Bang, Cordova, Cebu.</p>
                     </div>
                 </div>
-            </div>
         </div>
     )
 }

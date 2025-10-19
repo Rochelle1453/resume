@@ -7,9 +7,9 @@ function App() {
 
   return (
     <>
-      <div className="w-full h-screen">
+      <div className="w-full min-h-screen flex-col">
         <div className="h-[340px] w-full bg-[url(bg.jpg)] bg-cover bg-no-repeat opacity-[.-20] " ></div>
-        <div className="min-h-screen bg-gray-200 flex flex-row justify-center content-center">
+        <div className="flex-1 bg-gray-200 flex justify-center item-center px-4">
           <Resume />
         </div>
       </div>

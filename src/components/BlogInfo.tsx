@@ -3,7 +3,7 @@ type BlogItem = {
   title: string;
   date: string;
   description: string;
-};
+};  
 
 type BlogInfoProps = {
   information: BlogItem[];
