@@ -4,38 +4,24 @@ function MyProject() {
     const details = [
         {
             id: 1,
-            href: "https://www.facebook.com/rochelle.andales.90/",
+            href: "https://cpuscheduling.vercel.app/",
             imageId: 'folder.png',
-            title: 'OS',
-            date: '10/10/2025',
+            title: 'CPU Scheduling',
+            date: '11/30/2025',
         },
         {
             id: 2,
-            href: "https://www.facebook.com/rochelle.andales.90/",
+            href: "https://apps-dev-midterm-proj.vercel.app/",
             imageId: 'folder.png',
-            title: 'OS',
-            date: '10/10/2025',
+            title: 'E-Commerce App',
+            date: '09/27/2025',
         },
         {
             id: 3,
-            href: "https://www.facebook.com/rochelle.andales.90/",
+            href: "https://productcard-vert.vercel.app/",
             imageId: 'folder.png',
-            title: 'OS',
-            date: '10/10/2025',
-        },
-        {
-            id: 4,
-            href: "https://www.facebook.com/rochelle.andales.90/",
-            imageId: 'folder.png',
-            title: 'OS',
-            date: '10/10/2025',
-        },
-        {
-            id: 5,
-            href: "https://www.facebook.com/rochelle.andales.90/",
-            imageId: 'folder.png',
-            title: 'OS',
-            date: '10/10/2025',
+            title: 'Product Card',
+            date: '08/18/2025',
         },
     ];
     return (

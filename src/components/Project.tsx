@@ -22,10 +22,8 @@ function Project({ details }: ProjItemProps) {
                     <div key={d.id} className="bg-gray-100 rounded-md p-3 border border-gray-200 shadow-md w-full max-w-[140px] hover:shadow-lg transition-all">
                         <a className="flex flex-col items-center text-center" href={d.href}>
                             <img className="w-[40px] mb-2" src={d.imageId} />
-                            {/* <div className="text-center"> */}
                                 <p className="text-sm font-medium italic">{d.title}</p>
                                 <p text-xs text-gray-500>{d.date}</p>
-                            {/* </div> */}
                         </a>
                     </div>
                 ))}
