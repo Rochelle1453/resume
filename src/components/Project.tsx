@@ -2,6 +2,7 @@ type ProjItem = {
     id: number;
     href: string;
     imageId: string;
+    imageIdD: string;
     title: string;
     date: string;
 };
@@ -19,11 +20,12 @@ function Project({ details }: ProjItemProps) {
             <hr className="my-4 border border-purple-300" />
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 justify-items-center">
                 {details.map((d) => (
-                    <div key={d.id} className="bg-gray-100 rounded-md p-3 border border-gray-200 shadow-md w-full max-w-[140px] hover:shadow-lg transition-all">
+                    <div key={d.id} className="dark:bg-transparent bg-gray-100 rounded-md p-3 border border-gray-200 shadow-md w-full max-w-[140px] hover:shadow-lg transition-all">
                         <a className="flex flex-col items-center text-center" href={d.href}>
-                            <img className="w-[40px] mb-2" src={d.imageId} />
-                                <p className="text-sm font-medium italic dark:text-purple-800">{d.title}</p>
-                                <p className="dark:text-gray-500 text-xs text-gray-500"  >{d.date}</p>
+                            <img className="w-[40px] mb-2 dark:hidden" src={d.imageId} />
+                            <img className="hidden w-[40px] mb-2 dark:block" src={d.imageIdD} />
+                                <p className="text-sm font-medium italic dark:text-purple-300">{d.title}</p>
+                                <p className="dark:text-gray-300 text-xs text-gray-500"  >{d.date}</p>
                         </a>
                     </div>
                 ))}

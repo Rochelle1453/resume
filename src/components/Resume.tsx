@@ -50,7 +50,8 @@ function Resume({ darkMode, setDarkMode }: ResumeProps) {
               }`}
               onClick={() => setActiveTab("aboutme")}
             >
-              <img className="w-6 sm:w-8 mx-auto " src="../woman.png" alt="About" />
+              <img className="w-6 sm:w-8 mx-auto dark:hidden" src="../woman.png" alt="About" />
+              <img src="/woman-dark.png" className="hidden w-6 sm:w-8 mx-auto dark:block" alt="Dark icon" />
               <p className="mt-1 text-xs sm:text-sm font-medium text-gray-800 dark:text-white">ABOUT</p>
             </li>
 
@@ -63,7 +64,8 @@ function Resume({ darkMode, setDarkMode }: ResumeProps) {
               }`}
               onClick={() => setActiveTab("credentials")}
             >
-              <img className="w-6 sm:w-8 mx-auto" src="../cert.png" alt="Credentials" />
+              <img className="w-6 sm:w-8 mx-auto dark:hidden" src="../cert.png" alt="Credentials" />
+              <img src="/cert-dark.png" className="hidden w-6 sm:w-8 mx-auto dark:block" alt="Dark icon" />
               <p className="mt-1 text-xs sm:text-sm font-medium text-gray-800 dark:text-white">CREDENTIALS</p>
             </li>
 
@@ -76,7 +78,8 @@ function Resume({ darkMode, setDarkMode }: ResumeProps) {
               }`}
               onClick={() => setActiveTab("blog")}
             >
-              <img className="w-6 sm:w-8 mx-auto " src="../blog.png" alt="Blog" />
+              <img className="w-6 sm:w-8 mx-auto dark:hidden" src="../blog.png" alt="Blog" />
+              <img src="/blog-dark.png" className="hidden w-6 sm:w-8 mx-auto dark:block" alt="Dark icon" />
               <p className="mt-1 text-xs sm:text-sm font-medium text-gray-800 dark:text-white">BLOG</p>
             </li>
 
@@ -89,7 +92,8 @@ function Resume({ darkMode, setDarkMode }: ResumeProps) {
               }`}
               onClick={() => setActiveTab("myproject")}
             >
-              <img className="w-6 sm:w-8 mx-auto" src="../database.png" alt="Project" />
+              <img className="w-6 sm:w-8 mx-auto dark:hidden" src="../database.png" alt="Project" />
+              <img src="/database-dark.png" className="hidden w-6 sm:w-8 mx-auto dark:block" alt="Dark icon" />
               <p className="mt-1 text-xs sm:text-sm font-medium text-gray-800 dark:text-white">PROJECT</p>
             </li>
           </ul>
