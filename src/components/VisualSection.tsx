@@ -260,7 +260,7 @@ function VisualSection() {
             <div className="flex flex-col sm:flex-row items-center gap-4">
                 <ProfilePic />
                 <div className="text-center sm:text-left">
-                    <h1 className="text-2xl font-bold italic"><b>Rochelle Andales</b></h1>
+                    <h1 className="text-2xl font-bold italic dark:text-black"><b>Rochelle Andales</b></h1>
                     <p className="text-gray-700">BSIT 3B</p>
 
                     <div className="flex justify-center sm:justify-start gap-4 mt-4">
@@ -278,7 +278,7 @@ function VisualSection() {
                     <button
                         onClick={downloadCV}
                         disabled={isGenerating}
-                        className="mt-4 bg-violet-500 hover:bg-violet-600 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2 mx-auto sm:mx-0"
+                        className="mt-4 bg-violet-500 hover:bg-violet-600 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2 mx-auto sm:mx-0 cursor-pointer"
                     >
                         {isGenerating ? 'Preparing CV...' : 'Download CV'}
                     </button>
