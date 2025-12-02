@@ -19,25 +19,29 @@ function AboutMe() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                     {/* SKILL CARD */}
                     <div className="dark:bg-transparent flex flex-col items-center text-center bg-gray-100 rounded-xl p-6 border-2 border-violet-300 shadow-md">
-                        <img className="w-10 mb-3" src="../web-design.png" alt="WebDesign" />
+                        <img className="w-10 mb-3 dark:hidden" src="../web-design.png" alt="WebDesign" />
+                        <img src="/web-design-dark.png" className="hidden w-10 mb-3 dark:block" alt="Dark icon" />
                         <h4 className=" font-semibold text-md dark:text-purple-300">WEB DESIGN</h4>
                         <p className="mt-2 text-sm dark:text-white">Creating clean and modern website layouts.</p>
                     </div>
 
                     <div className="dark:bg-transparent flex flex-col items-center text-center bg-gray-100 rounded-xl p-6 border-2 border-violet-300 shadow-md">
-                        <img className="w-10 mb-3" src="../strategic.png" alt="ProblemDesign" />
+                        <img className="w-10 mb-3 dark:hidden" src="../strategic.png" alt="ProblemDesign" />
+                        <img src="/strategic-dark.png" className="hidden w-10 mb-3 dark:block" alt="Dark icon" />
                         <h4 className="font-semibold text-md dark:text-purple-300">PROBLEM-SOLVING</h4>
                         <p className="mt-2 text-sm dark:text-white">Debugging, troubleshooting, and logical thinking.</p>
                     </div>
 
                     <div className="dark:bg-transparent flex flex-col items-center text-center bg-gray-100 rounded-xl p-6 border-2 border-violet-300 shadow-md">
-                        <img className="w-10 mb-3" src="../development.png" alt="WebDevelopment" />
+                        <img className="w-10 mb-3 dark:hidden" src="../development.png" alt="WebDevelopment" />
+                        <img src="/development-dark.png" className="hidden w-10 mb-3 dark:block" alt="Dark icon" />
                         <h4 className="font-semibold text-md dark:text-purple-300">WEB DEVELOPMENT</h4>
                         <p className="mt-2 text-sm dark:text-white">Building responsive pages using HTML, CSS, and JS.</p>
                     </div>
 
                     <div className="dark:bg-transparent flex flex-col items-center text-center bg-gray-100 rounded-xl p-6 border-2 border-violet-300 shadow-md">
-                        <img className="w-10 mb-3" src="../adaptation.png" alt="Adaptability" />
+                        <img className="w-10 mb-3 dark:hidden" src="../adaptation.png" alt="Adaptability" />
+                        <img src="/adaptation-dark.png" className="hidden w-10 mb-3 dark:block" alt="Dark icon" />
                         <h4 className="font-semibold text-md dark:text-purple-300">ADAPTABILITY</h4>
                         <p className="mt-2 text-sm dark:text-white">Fast learner, open to new tools and technologies.</p>
                     </div>
